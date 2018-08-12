@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | %UNITY_WEB_NAME%</title>
+    <script src="%UNITY_WEBGL_LOADER_URL%"></script>
+    <link rel="stylesheet" href="TemplateData/style.css">
+    <script>
+    var gameInstance = UnityLoader.instantiate("gameContainer", "%UNITY_WEBGL_BUILD_URL%");
+    </script>
+  </head>
+  
+  <body style="background-color:black; padding: 0; margin: 0;">
+    <div id="gameContainer" style="width: %UNITY_WIDTH%px; height: %UNITY_HEIGHT%px; margin: auto"></div>
+    <div class="footer">
+      <img style="padding-left: 468px; padding-top: 4px;" src="TemplateData/fullscreen.png" width="38" height="38" alt="Fullscreen" title="Fullscreen" onclick="gameInstance.SetFullscreen(1);" />
+    </div>
+  </body>
+  
+</html>
